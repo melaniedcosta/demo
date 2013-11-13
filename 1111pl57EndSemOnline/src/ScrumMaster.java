@@ -1,17 +1,14 @@
 
-public class Project {
-	Sprint sprint;
+public class ScrumMaster extends TeamMember {
+	
 	String name;
-
-	public Project(Sprint sp,String n){
-		this.sprint=sp;
+	public ScrumMaster(String n){
+		
 		this.name=n;
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}

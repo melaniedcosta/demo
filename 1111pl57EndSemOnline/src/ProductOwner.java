@@ -1,19 +1,20 @@
 
-public class Project {
-	Sprint sprint;
+public class ProductOwner extends TeamMember {
 	String name;
-
-	public Project(Sprint sp,String n){
-		this.sprint=sp;
+	
+	
+	public ProductOwner(String n){
 		this.name=n;
 	}
+
 
 	public String getName() {
 		return name;
 	}
 
+
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 }

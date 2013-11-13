@@ -4,18 +4,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class ProjectTest {
-	Project project1;
+public class SprintTest {
 	Sprint sprint1;
-
 	@Before
 	public void setUp() throws Exception {
-		project1=new Project(sprint1,"scrum");
+		sprint1=new Sprint(5);
 	}
 
 	@Test
-	public void testGetName() {
-		assertEquals("scrum",project1.getName());
+	public void testSprintDays() {
+		assertEquals(5,sprint1.getNo_ofdays());
 	}
 
 }
