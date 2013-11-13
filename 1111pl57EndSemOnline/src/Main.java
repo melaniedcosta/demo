@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Main {
 
@@ -6,8 +8,11 @@ public class Main {
 		Sprint sprint1=new Sprint(5);
 		Story story1=new Story(sprint1,"As an admin, I want to write rules.....",2,10);
 		Story story2=new Story(sprint1,"As a customer, I want to register.....",1,7);
+		//ArrayList<Task> tasklist=new ArrayList<Task>();
 		Task task=new Task(story1,"Designing",3);
-		Task task1=new Task(story2,"Designing",3);
+		Task task1=new Task(story2,"Designing",2);
+		//tasklist.add(task);
+		//tasklist.add(task);
 		Project project1=new Project(sprint1,"scrum");
 		TeamMember sm=new ScrumMaster("Roy");
 		TeamMember po=new ProductOwner("Sam");
@@ -24,6 +29,11 @@ public class Main {
 		System.out.println("\nSprint1 \n\tStory2: "+story2.getStory()+"\n\tPriority: "+story2.getPriority()+"\tStory Point: "+story2.getStorypt());
 		System.out.println("\tTask1: "+task1.getName()+"\tNo of hrs: "+task1.getNo_ofhrs());
 		System.out.println("\tTeam member: "+member2.getName());
+		/*for(int i = 0; i < tasklist.size(); i++) {
+			System.out.println(tasklist.get(i).getStory().getStory());
+		    System.out.println(tasklist.get(i).getName());
+		    System.out.println(tasklist.get(i).getNo_ofhrs());
+		} */ 
 	}
 
 }
